@@ -28,6 +28,8 @@ services:
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
       WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_DEFAULT_THEME', 'no-theme');
 volumes:
   db_data: {}
   wordpress_data: {}
