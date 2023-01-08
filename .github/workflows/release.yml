@@ -4,15 +4,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: zip files
-      uses: thedoctor0/zip-release@master
-      with:
-        type: 'zip'
-        filename: 'no-theme.zip'
-        path: 'no-theme'
-    - name: release
-      uses: softprops/action-gh-release@v1
-      if: startsWith(github.ref, 'refs/tags/')
-      with:
-        files: no-theme.zip
+      - uses: actions/checkout@master
+      - name: zip files
+        uses: thedoctor0/zip-release@master
+        with:
+          type: "zip"
+          filename: "no-theme.zip"
+          path: "no-theme"
+      - name: release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: no-theme.zip
