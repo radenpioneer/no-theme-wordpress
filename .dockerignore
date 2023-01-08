@@ -1,4 +1,5 @@
 .docker
 .github
-./Makefile
+Makefile
+renovate.json
 README.md
