@@ -37,7 +37,7 @@ services:
   nginx:
     depends_on:
       - wordpress
-    image: nginx:1.25.5-alpine
+    image: nginx:1.26.0-alpine
     container_name: nginx
     restart: unless-stopped
     ports:
