@@ -3,7 +3,7 @@ version: "3"
 services:
   db:
     container_name: db
-    image: mariadb:10.11.9
+    image: mariadb:10.11.11@sha256:3958f2df725a9ebdabd0ae6a0c0a841da8e45194b36a33d8bd83abb7dd6c034a
     volumes:
       - db_data:/var/lib/mysql
     restart: unless-stopped
