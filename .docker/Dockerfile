@@ -1,4 +1,4 @@
-FROM wordpress:6.8.1-fpm-alpine@sha256:2511bc0726b34313ae835272040b7104d72079be954243024445bc9a86a7ca97
+FROM wordpress:6.8.2-fpm-alpine@sha256:688d09e4832b527078b98e84e5d96698c2643e6563ea05764d0ce7a03d93d588
 
 WORKDIR /var/www/html/
 
